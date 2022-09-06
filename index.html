@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Botsync - Emailer</title>
+    <style type="text/css">
+        @font-face {
+            font-family: 'poppins-bold';
+            src: url(fonts/Poppins-Bold.ttf)format('opentype');
+        }
+
+        @font-face {
+            font-family: 'poppins-medium';
+            src: url(fonts/Poppins-Medium.ttf)format('opentype');
+        }
+
+        @font-face {
+            font-family: 'poppins-mediumitalic';
+            src: url(fonts/Poppins-MediumItalic.ttf)format('opentype');
+        }
+
+        @font-face {
+            font-family: 'poppins-regular';
+            src: url(fonts/Poppins-Regular.ttf)format('opentype');
+        }
+
+        @font-face {
+            font-family: 'poppins-semibold';
+            src: url(fonts/Poppins-SemiBold.ttf)format('opentype');
+        }
+
+        .MsoNormal {
+            text-align: center !important;
+        }
+
+
+        /* RESET STYLES */
+        html {
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        body,
+        #bodyTable,
+        #bodyCell,
+        #bodyCell {
+            height: 100% !important;
+            margin: 0;
+            padding: 0;
+            width: 100% !important;
+            font-family: 'poppins-regular', sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table[id=bodyTable] {
+            width: 100% !important;
+            margin: auto;
+            max-width: 600px !important;
+            color: #7A7A7A;
+            font-weight: normal;
+        }
+
+        img,
+        a img {
+            border: 0;
+            outline: none;
+            text-decoration: none;
+            height: auto;
+            line-height: 100%;
+        }
+
+        a {
+            text-decoration: none !important;
+            border-bottom: 0px solid;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #5F5F5F;
+            font-weight: normal;
+            font-family: 'poppins-bold', sans-serif;
+            font-size: 20px;
+            line-height: 125%;
+            text-align: Left;
+            letter-spacing: normal;
+            margin-top: 0;
+            margin-right: 0;
+            margin-bottom: 10px;
+            margin-left: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+
+
+        /* Force Hotmail/Outlook.com to display line heights normally. */
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        /* Remove spacing between tables in Outlook 2007 and up. */
+        #outlook a {
+            padding: 0;
+        }
+
+        /* Force Outlook 2007 and up to provide a "view in browser" message. */
+        img {
+            -ms-interpolation-mode: bicubic;
+            display: block;
+            outline: none;
+            text-decoration: none;
+        }
+
+        /* Force IE to smoothly render resized images. */
+        body,
+        table,
+        td,
+        p,
+        a,
+        li,
+        blockquote {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            font-weight: normal !important;
+        }
+    </style>
+
+</head>
+
+<body bgcolor="#fff">
+    <!-- <div align="center" style="font-family:'Arial',sans-serif;font-size:13px; margin-bottom: 20px;">
+      If you are unable to view the below e-mailer, please <a href="" target="_blank" style="color:#0655a4;text-decoration:none;">
+      click here</a>
+   </div> -->
+    <table align="center" cellspacing="0" cellpadding="0" border="0" style="border: 0px solid #fff; width: min(100%, 800px);">
+        <tbody>
+            <tr>
+                <td style="border-bottom:0px solid #fff;padding-bottom:0">
+                    <table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+
+                            <!----------------------------------------- Main Wrapper  ------------------------------------>
+                            <tr>
+                                <td align="left" valign="bottom" colspan="5">
+                                    <table width="100%" align="center" cellspacing="0" cellpadding="0" border="0"
+                                        style="border-collapse: collapse;overflow: hidden;">
+                                        <tbody>
+
+                                            <!---------------------- Header Image 1 ---------------------->
+                                            <tr>
+                                                <td>
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0"
+                                                        align="center">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="100%" valign="top" align="center">
+                                                                    <table width="100%" border="0" cellspacing="0"
+                                                                        cellpadding="0" bgcolor="#fff">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <a style="color:#fff;text-decoration:none;"
+                                                                                        href="#" target="_blank">
+                                                                                        <img border="0" width="100%"
+                                                                                            src="images/header.png"
+                                                                                            alt="botsync"
+                                                                                            title="botsync"
+                                                                                            style="display:block"
+                                                                                            class="to100pc"></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>&nbsp;</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!---------------------- Header Image 1 ---------------------->
+
+
+                                            <tr>
+                                                <td>
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0"
+                                                        align="center" bgcolor="#fff">
+                                                        <tbody>
+
+                                                            <!---------------------- Header Image 2 ---------------------->
+                                                            <tr>
+
+                                                                <td colspan="2" valign="top" width="100%"
+                                                                    style="font-family:'Varela Round', sans-serif; text-align:center;border-top:0px solid #fff;background-color:#fff; width:100%;height:90px;text-decoration:none;">
+                                                                    <a style="color:#fff;text-decoration:none;"
+                                                                        href="https://ecoware.in/shop/taarey"
+                                                                        target="_blank">
+                                                                        <img border="0" width="100%"
+                                                                            src="images/2-01.png" alt="botsync"
+                                                                            style="display:block" class="to100pc"></a>
+                                                                </td>
+
+                                                            </tr>
+                                                            <!---------------------- Header Image 2 ---------------------->
+
+
+                                                            <!---------------------- Header Description ---------------------->
+                                                            <tr>
+                                                                <td colspan="2" valign="top"
+                                                                    style="font-family:'Varela Round', sans-serif; background-color:#fff; text-align:left; width:50%; padding: 20px 0px 20px 0px;">
+                                                                    <table width="90%" align="center" border="0"
+                                                                        cellspacing="0" cellpadding="0">
+                                                                        <tr>
+                                                                            <td>
+                                                                                <h4
+                                                                                    style="line-height:24px;color:#000; font-size:19px; text-decoration:none;display:block; text-align:center">
+                                                                                    Well, Here’s The Big News!!!</h4>
+                                                                                <p style="line-height:31px;color:#000; font-size:19px; text-decoration:none;display:block; text-align:center;padding: 0px;"
+                                                                                    target="_blank">Botsync is growing
+                                                                                    with leaps and bounds, and we wanted
+                                                                                    to take the opportunity to announce
+                                                                                    that we raised funding of up to $3.2
+                                                                                    million for scaling our automation
+                                                                                    solutions. From the pre-series A
+                                                                                    round, our venture was backed by
+                                                                                    esteemed investors, including Wong
+                                                                                    Fong Engineering, Angel Central, and
+                                                                                    Seeds Capital, to name a few!
+                                                                                </p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+
+                                                                </td>
+                                                            </tr>
+                                                            <!---------------------- Header Description ---------------------->
+
+                                                            <!----------------------- Header button ------------------------>
+                                                            <tr>
+                                                                <td valign="top"
+                                                                    style="font-family:'Varela Round', sans-serif;background-color:#fff; width: 3%;">
+                                                                </td>
+
+                                                                <td align="center">
+                                                                    <table border="0" cellspacing="0" cellpadding="0"
+                                                                        role="presentation">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td bgcolor="#6fc2dd"
+                                                                                    style="border-radius:0px;background-color:#ed7d31;padding: 0.2cm 0.2cm 0.2cm 0.2cm">
+                                                                                    <a style="font-size:15px;font-family: 'poppins-semibold';color:#ffffff;text-align:center;text-decoration:none;display:block;font-weight:600;line-height:20px;background-color:#ed7d31;padding:3px 15px;letter-spacing:0.5px;border-radius:0px;text-decoration: none;"
+                                                                                        href="https://ecoware.in/shop/taarey"
+                                                                                        title="taarey" target="_blank"
+                                                                                        data-saferedirecturl="https://ecoware.in/shop/taarey">
+                                                                                        READ MORE
+                                                                                    </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+
+                                                                <td valign="top"
+                                                                    style="font-family:'Varela Round', sans-serif;background-color:#fff; width: 3%;">
+                                                                </td>
+                                                            </tr>
+                                                            <!----------------------- Header button ------------------------>
+
+
+
+                                                            <!------------------------- Horizontal line ------------------------>
+                                                            <tr>
+                                                                <td valign="top"
+                                                                    style="font-family:'Varela Round', sans-serif;background-color:#fff; width: 3%;">
+                                                                </td>
+
+                                                                <td align="center">
+                                                                    <table border="0" cellspacing="0" cellpadding="0"
+                                                                        role="presentation">
+                                                                        <tbody>
+                                                                            <tr>
+
+                                                                                <td colspan="2" valign="top"
+                                                                                    width="100%"
+                                                                                    style="font-family:'Varela Round', sans-serif;padding:60px 0px; text-align:center;border-top:0px solid #fff;background-color:#fff; width:100%;height:auto;text-decoration:none;">
+                                                                                    <a style="color:#fff;text-decoration:none;"
+                                                                                        href="https://ecoware.in/shop/taarey"
+                                                                                        target="_blank">
+                                                                                        <img border="0" width="100%"
+                                                                                            src="images/line-horizontal.png"
+                                                                                            alt="botsync"
+                                                                                            style="display:block"
+                                                                                            class="to100pc"></a>
+                                                                                </td>
+
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+
+                                                                <td valign="top"
+                                                                    style="font-family:'Varela Round', sans-serif;background-color:#fff; width: 3%;">
+                                                                </td>
+
+                                                            </tr>
+                                                            <!------------------------- Horizontal line ------------------------>
+
+
+                                                            <!------------------------- Below header Text ------------------------>
+                                                            <tr>
+                                                                <td colspan="2" valign="top"
+                                                                    style="font-family:'Varela Round', sans-serif; background-color:#fff; text-align:left; width:50%; padding: 10px 0px 10px 0px;">
+                                                                    <table width="90%" align="center" border="0"
+                                                                        cellspacing="0" cellpadding="0">
+                                                                        <tr>
+                                                                            <td>
+                                                                                <h2
+                                                                                    style="line-height:23px;color:#000; font-size:25px; text-decoration:none;display:block; text-align:center">
+                                                                                    Unlocking New Avenues For <span
+                                                                                        style="color:#ed7d31;">MAG
+                                                                                        AMR</span></h2>
+                                                                                <p style="line-height:31px;color:#000; font-size:19px; text-decoration:none;display:block; text-align:center;padding: 0px;"
+                                                                                    target="_blank">We have recently
+                                                                                    unlocked two new industries for our
+                                                                                    MAG AMR automation solution.
+                                                                                </p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+
+                                                                </td>
+                                                            </tr>
+                                                            <!------------------------- Below header Text ------------------------>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+
+                                            <!---------------------- Header Section Closed---------------------->
+
+
+
+
+                                            <!--------------------------------------- Assets Area -------------------------------------------->
+                                            <tr style="background-color: #fff;">
+                                                <td>
+                                                    <table
+                                                        style="width: 100%; margin: 0px 0px; border-collapse: collapse;background-color: #fff;">
+                                                        <tbody>
+
+                                                            <!---------------------- Section 2.1 ---------------------->
+                                                            <tr>
+                                                                <td colspan="2" valign="top" width="100%"
+                                                                    style="font-family:'Varela Round', sans-serif; text-align:center;border-top:0px solid #fff;background-color:#fff; width:100%;height:90px;text-decoration:none;padding: 10px 0px 60px 0px;">
+                                                                    <a style="color:#fff;text-decoration:none;"
+                                                                        href="https://ecoware.in/shop/taarey"
+                                                                        target="_blank">
+                                                                        <img border="0" width="100%"
+                                                                            src="images/middle-section.png"
+                                                                            alt="botsync" style="display:block"
+                                                                            class="to100pc"></a>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!---------------------- Assets 1 Closed ---------------------->
+
+                                            <tr>
+                                                <td colspan="2" valign="top"
+                                                    style="font-family:'Varela Round', sans-serif; background-color:#fff; text-align:left; width:50%; padding: 10px 0px 0px 0px;">
+                                                    <table width="100%" align="center" border="0" cellspacing="0"
+                                                        cellpadding="0">
+                                                        <tr>
+                                                            <td bgcolor="#6fc2dd"
+                                                                style="border-radius:0px;background-color:#ed7d31;padding: 0.2cm 0.2cm 0.2cm 0.2cm">
+                                                                <a style="font-size:20px;font-family: 'poppins-bold';color:#ffffff;text-align:center;text-decoration:none;display:block;font-weight:600;line-height:20px;background-color:#ed7d31;padding:10px 15px;letter-spacing:0.5px;border-radius:0px;text-decoration: none;"
+                                                                    href="https://ecoware.in/shop/taarey" title="taarey"
+                                                                    target="_blank"
+                                                                    data-saferedirecturl="https://ecoware.in/shop/taarey">
+                                                                    Check Our Latest Blog
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+
+                                                </td>
+                                            </tr>
+
+                                            <!--------------------------------------- Assets 2 -------------------------------------------->
+                                            <tr style="background-color: #ecebeb;">
+                                                <td>
+                                                    <table
+                                                        style="width: 100%; margin: 0px 0px; border-collapse: collapse;background-color: #606060;">
+                                                        <tbody>
+
+                                                            <tr>
+                                                                <td>
+                                                                    <table
+                                                                        style="width: 100%; border-collapse: collapse;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td valign="top">
+                                                                                    &nbsp;
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign="top"
+                                                                                    style="font-family:poppins-bold; text-align:left; width:5%;">
+                                                                                </td>
+                                                                                <td valign="top"
+                                                                                    style="font-family:poppins-bold; text-align:left;padding:0px;">
+                                                                                    <p
+                                                                                        style="padding:0;margin:8px 0; text-align:right;">
+                                                                                        <a href="https://youtu.be/8tMBA5lk9jU"
+                                                                                            target="_blank"
+                                                                                            title="Watch Video">
+                                                                                            <img alt=""
+                                                                                                src="images/thumbnails.png"
+                                                                                                width="350px"
+                                                                                                style="border:0"></a>
+
+                                                                                    </p>
+                                                                                </td>
+
+                                                                                <td valign="top"
+                                                                                    style="font-family:poppins-bold; width: 5%;">
+                                                                                </td>
+
+                                                                                <td valign="top"
+                                                                                    style="font-family:'poppins-semibold', sans-serif; color:#fff; text-align:left; width:50%; padding: 0px 9px 0 0px;">
+                                                                                    <p style="font-size:20px;font-weight:600;color:#fff;line-height: 28px;text-decoration:none;display:block;text-align:left;margin-bottom: 0px;margin-top:5px;"
+                                                                                        target="_blank">
+                                                                                        <strong>Automating Automotive
+                                                                                            Manufacturing</strong>
+                                                                                    </p>
+
+                                                                                    <p style="padding:0;margin:8px 0;line-height:31px;color:#fff; font-size:16px; text-decoration:none;display:block; text-align:left;font-family:'poppins-regular', sans-serif;"
+                                                                                        target="_blank">
+                                                                                        The use of robotics in
+                                                                                        automotive
+                                                                                        factories is not recent. In
+                                                                                        fiction, it traces
+                                                                                        back to 1921, in the play
+                                                                                        Rossum’s
+                                                                                        Universal Robots and in
+                                                                                        reality...
+                                                                                    </p><br>
+                                                                                    <a style="font-size:14px;font-family: 'poppins-semibold';color:#ffffff;text-align:center;text-decoration:none;display:block;font-weight:600;line-height:20px;background-color:#ed7d31;padding:6px 13px;letter-spacing:0.5px;border-radius:0px;text-decoration: none;width: 100px;"
+                                                                                        href="https://blog.botsync.co/2022/06/22/automating-automotive-manufacturing/"
+                                                                                        title="taarey" target="_blank"
+                                                                                        data-saferedirecturl="https://blog.botsync.co/2022/06/22/automating-automotive-manufacturing/">
+                                                                                        READ MORE
+                                                                                    </a>
+                                                                                </td>
+
+
+                                                                                <td valign="top"
+                                                                                    style="font-family:'Varela Round', sans-serif; width: 5%;">
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td valign="top">
+                                                                                    &nbsp;
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!---------------------- Assets 2 Closed ---------------------->
+
+                                            <!-------------- We Shiped GLobaly  --------->
+                                            <tr>
+                                                <td width="100%" valign="top" align="center">
+                                                    <table width="800" border="0" cellspacing="0" cellpadding="0"
+                                                        style="background-color: #eee;">
+                                                        <tbody>
+                                                            <tr>
+
+                                                                <td align="center" valign="top"
+                                                                    style="padding: 0.60cm 0cm 0.60cm 0cm; background-color: #eee;;">
+                                                                    <p style="padding:0;margin:0px 0;line-height:31px;color:#000; font-size:19px; text-decoration:none;display:block; text-align:center;font-family:'poppins-medium', sans-serif;"
+                                                                        target="_blank">
+                                                                        Find our latest video of our <span
+                                                                            style="color:#ed7d31;">MAG1000 AMR pallet
+                                                                            movement automation</span>
+                                                                    </p>
+                                                                    <p style="padding:0;margin:0px 0;line-height:31px;color:#000; font-size:19px; text-decoration:none;display:block; text-align:center;font-family:'poppins-medium', sans-serif;"
+                                                                        target="_blank">
+                                                                        in a 3PL warehouse in the following newsletter.
+                                                                    </p>
+                                                                </td>
+
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-------------- We Shiped GLobaly  --------->
+
+
+                                            <!-------------- Footer  --------->
+                                            <tr style="background-color: #eee;">
+                                                <td width="100%" valign="top" align="center">
+                                                    <table width="800" border="0" cellspacing="0" cellpadding="0">
+                                                        <tbody>
+
+                                                            <!------------- Social Icons ---------------->
+                                                            <tr>
+                                                                <td width="50" style="font-size:1px;line-height:1px;">
+                                                                    &nbsp;</td>
+
+                                                                <td width="500" align="center" valign="top"
+                                                                    style="padding: 0cm 0cm 0cm 0cm;">
+                                                                    <table align="center" width="100%" border="0"
+                                                                        cellspacing="0" cellpadding="0">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="center" valign="top"
+                                                                                    style="font-size:1px;line-height:1px;text-align:center">
+                                                                                    <table width="300" align="center"
+                                                                                        border="0" cellspacing="0"
+                                                                                        cellpadding="0">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td
+                                                                                                    style="font-family:Arial,sans-serif;font-size:18px;line-height:24px;color:#a8aca1">
+                                                                                                    <p class="MsoNormal"
+                                                                                                        style="text-align: center;">
+                                                                                                        <a href="mailto:sales@botsync.co"
+                                                                                                            target="_blank"><img
+                                                                                                                src="images/icons-1.png"
+                                                                                                                width="40"
+                                                                                                                height="40"
+                                                                                                                style="display: revert;"
+                                                                                                                target="_blank">
+                                                                                                        </a>
+                                                                                                    </p>
+                                                                                                    </p>
+                                                                                                </td>
+
+                                                                                                <td
+                                                                                                    style="font-family:Arial,sans-serif;font-size:18px;line-height:24px;color:#a8aca1">
+                                                                                                    <p class="MsoNormal"
+                                                                                                        style="text-align: center;">
+                                                                                                        <a href="https://www.botsync.co/"
+                                                                                                            target="_blank"><img
+                                                                                                                src="images/icons-2.png"
+                                                                                                                width="40"
+                                                                                                                height="40"
+                                                                                                                style="display: revert;"></a>
+                                                                                                    </p>
+                                                                                                </td>
+
+                                                                                                <td
+                                                                                                    style="font-family:Arial,sans-serif;font-size:18px;line-height:24px;color:#a8aca1">
+                                                                                                    <p class="MsoNormal"
+                                                                                                        style="text-align: center;">
+                                                                                                        <a href="https://linkedin.com/company/botsync/"
+                                                                                                            target="_blank"><img
+                                                                                                                src="images/icons-3.png"
+                                                                                                                width="40"
+                                                                                                                height="40"
+                                                                                                                style="display: revert;"></a>
+                                                                                                    </p>
+                                                                                                </td>
+
+
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                                <td width="50" style="font-size:1px;line-height:1px">
+                                                                    &nbsp;</td>
+                                                            </tr>
+                                                            <!------------- Social Icons ---------------->
+
+                                                            <!-------------Contact Us ---------------->
+                                                            <tr>
+                                                                <td width="50" style="font-size:1px;line-height:1px;">
+                                                                    &nbsp;</td>
+
+                                                                <td width="500" align="center" valign="top"
+                                                                    style="padding: 0.20cm 0cm 0.10cm 0cm;">
+                                                                    <table align="center" width="100%" border="0"
+                                                                        cellspacing="0" cellpadding="0">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="center" valign="top"
+                                                                                    style="font-size:15px;line-height:1px;text-align:center;font-family:'poppins-mediumitalic', sans-serif">
+                                                                                    <p style="padding: 5px 0px;"><a href="https://ecoware.in/contact-us/"
+                                                                                            target="_blank"
+                                                                                            style="font-family:'poppins-mediumitalic', sans-serif;font-size:15px;line-height:1px;text-align:center;color:#606060;">Copyright
+                                                                                            © 2022 Botsync Pvt Ltd. All
+                                                                                            rights reserved.</a></p>
+                                                                                    <p style="padding: 5px 0px;"><a href="https://ecoware.in/contact-us/"
+                                                                                            target="_blank"
+                                                                                            style="font-family:'poppins-medium', sans-serif;font-size:15px;line-height:1px;text-align:center;color:#606060">Singapore
+                                                                                            | Bangalore
+                                                                                        </a></p>
+                                                                                    <p style="padding: 5px 0px 20px 0px;"><a href="https://ecoware.in/contact-us/"
+                                                                                            target="_blank"
+                                                                                            style="font-family:'poppins-medium', sans-serif;font-size:15px;line-height:1px;text-align:center;color:#606060">(P): 85904386 (E): contact@botsync.co 
+                                                                                        </a></p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                                <td width="50" style="font-size:1px;line-height:1px">
+                                                                    &nbsp;</td>
+                                                            </tr>
+                                                            <!-------------Contact Us ---------------->
+
+
+                                                            <!------------- Description ---------------->
+                                                            <tr>
+                                                                 
+                                                            </tr>
+                                                            <!------------- Description ---------------->
+
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-------------- Footer --------->
+
+
+
+                                        </tbody>
+                                    </table>
+
+
+                                </td>
+                            </tr>
+                            <!----------------------------------------- Main Section End ---------------------------------------------->
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

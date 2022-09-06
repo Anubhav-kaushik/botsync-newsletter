@@ -1,0 +1,86 @@
+Package Report
+
+-----------------------------------------------------------------------------
+Document:
+Name: Botsync Newsletter_v1.ai
+Color Mode: RGB color
+Color Profile: Display
+Ruler Units: pixels
+Artboard Dimensions: 600 px x 1520.7118 px
+Show Images in Outline Mode: OFF
+Highlight Substituted Fonts: OFF
+Highlight Substituted Glyphs: OFF
+Preserve Text Editability
+Simulate Colored Paper: OFF
+
+-----------------------------------------------------------------------------
+Spot Color Objects:
+
+-----------------------------------------------------------------------------
+Missing Fonts:NONE
+
+-----------------------------------------------------------------------------
+Protected Fonts that were not packaged:NONE
+
+-----------------------------------------------------------------------------
+Fonts:
+Poppins Regular (TrueType)
+Poppins Medium (TrueType)
+Poppins Medium Italic (TrueType)
+Poppins SemiBold (TrueType)
+Poppins Bold (TrueType)
+
+-----------------------------------------------------------------------------
+Embedded Fonts:
+NONE
+
+-----------------------------------------------------------------------------
+Missing Links:
+NONE
+
+-----------------------------------------------------------------------------
+Linked Images:
+
+/Users/santosh/Downloads/logo_black_trans.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 15625K, 2000 by 2000 pixels
+Dimensions: 38.505 by 38.505 points 
+Resolution: 3739.816 by 3739.816 pixels per inch
+
+
+/Users/santosh/Documents/SANTOSH/Botsync/Botsync MAG AMR Fleet.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 1360K, 1200 by 387 pixels
+Dimensions: 637.519 by 205.6 points 
+Resolution: 135.525 by 135.525 pixels per inch
+
+
+/Users/santosh/Desktop/Screenshot 2022-09-05 at 9.49.00 AM
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 6518K, 1386 by 1204 pixels
+Dimensions: 196.579 by 170.765 points 
+Resolution: 507.644 by 507.644 pixels per inch
+
+
+/Users/santosh/Desktop/Screenshot 2022-09-05 at 9.53.31 AM
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 3433K, 1382 by 636 pixels
+Dimensions: 361 by 205 points 
+Resolution: 275.634 by 223.376 pixels per inch
+
+
+/Users/santosh/Desktop/Screenshot 2022-09-05 at 9.53.38 AM
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 3865K, 1386 by 714 pixels
+Dimensions: 362 by 222 points 
+Resolution: 275.669 by 231.568 pixels per inch
